@@ -1,0 +1,70 @@
+2017.03.20
+DNS 약자
+root server
+
+host command ; host www.kw.ac.kr, host -t mx kw.ac.kr
+
+ptr : host name 알려줌.
+soa.
+
+캡쳐 네프1
+
+2-1장
+p.4
+	UC Berkeley에서 쉬운 TCP/IP base 라이브러리의 필요성을 느껴 만듦
+p.5
+	"socket interface"라 부름. 버클리 소켓 인터페이스. 윈도우 소켓은 '윈솟'
+	BSD UNIX라고 부름. 유닉스 안쓰니까 리눅스상에서 쓰게되었음.
+p.6
+	abstraction...운영체제에서 이론적인 것만 배웠는데.....
+p.7
+	linux에서는 f가 안붙고 그냥 통일된 명령어 사용. 파일 외 모두 open명령어를 이용해 열 수 있음.
+p.8
+	네트워크에 대해서 모르더라도 파일 I/O만 알더라도 네트웍프로그래밍 가능해짐.
+	C에서는 FILE *fp 의 *fp를 파일 포인터라고 하는데 여기서는 'file discripter'라고 부름.
+p.9
+	EX
+	/dev/stdin : 키보드. 키보드도 파일이네.
+
+	ls를 stdout에 넣는다.
+	실습..... 캡펴2
+
+	vidto.c
+	gcc -o sto sto.c
+	그냥 컴파일은 make sto 로 가능
+	exc, i, z 익숙해져야함
+
+	esc하고 :wq
+
+p.12
+	기본적인 file discripter
+p.13
+p.14
+p.15
+	ls >
+	echo <
+	 | more
+p.17
+	소켓이 무엇인가?
+	socket descropter
+p.18
+	scoet 만들고 open 하고 만들고 close하고 간단함.
+p.19
+	server는 계속 기다리니 passive socket
+	
+p.20
+	소켓프로그램의 기본
+p.21
+	소켓의 파일디스크립터를 만드는 것이 소켓을 호출하는 것.
+	그다음 connect하고 그다음 읽고쓰고 close
+p.22
+	서버는 소켓 갹체 만들어서 bind하고( 포트랑 ip번호), 큐에 계속 쌓아둬야해서 listen queue( = connection queue)를 정하고 accept호출(connection 될 때까지 기다림 그래서 서버쪽에서는 accept가 받는거.
+read, write끝나면 close하고 끝.
+
+p.23
+	소켓 쓰려면 세팅해야할 것이 많음. 
+	여튼 include 밑에 sys 하고 등등...
+p.24
+
+p.25 다음시간에
+

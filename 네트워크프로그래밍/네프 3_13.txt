@@ -1,0 +1,17 @@
+
+IPv6 address archictecture ; 16bit다..
+
+DHCP ; dynamic allocation......
+
+ICMP ; 
+PPP ; 모뎀사용
+VPN ; tunnelling 개념.가장 많이 쓰는 프로토콜이 PPTP.
+
+network자격증 오라클 등
+
+diagnotic....ping 큰 사이트는 ping 프로토콜을 막아놓음. (학교홈페이지는 32바이트.) 서버를 위해.
+arp
+
+
+
+
